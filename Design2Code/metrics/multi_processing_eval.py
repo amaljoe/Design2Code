@@ -39,8 +39,8 @@ if __name__ == "__main__":
     debug = False
     multiprocessing = True
 
-    orig_reference_dir = "../testset_final"
-    eval_name = "testset_final"
+    orig_reference_dir = "../testset_final_extracted"
+    eval_name = "vcoder"
 
     ## copy the original reference directory to a new directory
     ## because we will be creating new screenshots
@@ -52,8 +52,8 @@ if __name__ == "__main__":
     print ("copied original reference directory to ", reference_dir)
 
     test_dirs = {
-        "gpt4v_direct_prompting": "../predictions_final/gpt4v_direct_prompting",
-        "gemini_direct_prompting": "../predictions_final/gemini_direct_prompting"
+        "qwen-base": "../../vision-coder/outputs/benchmark/qwen-base",
+        "vcoder-grpo-clip": "../../vision-coder/outputs/benchmark/vcoder-grpo-clip",
     }
 
     file_name_list = []
